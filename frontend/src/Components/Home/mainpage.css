@@ -1,0 +1,130 @@
+/* mainpage.css */
+.mainpage-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainpage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.mainpage-header-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mainpage-profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.mainpage-profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mainpage-profile-options {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 10px;
+}
+
+.mainpage-profile-options p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.mainpage-profile-options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.mainpage-body-container {
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.mainpage-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f8f8f8;
+  width: 200px;
+}
+
+.mainpage-sidebar-btn {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mainpage-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.mainpage-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: calc(25% - 20px);
+  transition: transform 0.2s;
+}
+
+.mainpage-card:hover {
+  transform: translateY(-5px);
+}
+
+.mainpage-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mainpage-card-content {
+  padding: 16px;
+}
+
+.mainpage-card-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+}
+
+.mainpage-card-content p {
+  margin: 0;
+  color: #555;
+}
