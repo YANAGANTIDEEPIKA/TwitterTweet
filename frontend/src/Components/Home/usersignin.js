@@ -41,7 +41,9 @@ const UserSignin = ({ setAuthenticated }) => {
       setError(error.message);
     }
   };
-
+  const handlefront = () => {
+    navigate(+1);
+  };
   return (
     <div>
       <h1>Sign In</h1>
@@ -67,6 +69,8 @@ const UserSignin = ({ setAuthenticated }) => {
         {error && <p style={{ color: 'red' }}>{error}</p>}
         <button type="submit">Sign In</button>
       </form>
+      <p>Don't you have an account? <a href="/usersignup">Signup</a></p>
+      <button  onClick={handlefront}>forward</button>
     </div>
   );
 };

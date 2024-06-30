@@ -11,7 +11,7 @@ const Seller = () => {
 
   useEffect(() => {
     const fetchSellerName = async () => {
-      const email = localStorage.getItem('userEmail');
+      const email = localStorage.getItem('sellerEmail');
       if (!email) {
         navigate('/sellersignin');
         return;

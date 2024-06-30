@@ -1,0 +1,32 @@
+/* Admin.css */
+.admin-container {
+    padding: 20px;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-th, .admin-td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .admin-img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+  
+  .admin-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .admin-button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

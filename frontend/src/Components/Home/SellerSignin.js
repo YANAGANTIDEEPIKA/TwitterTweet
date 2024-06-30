@@ -13,7 +13,7 @@ const SellerSignin = ({ setAuthenticated }) => {
     try {
       const response = await axios.post('http://localhost:1432/sellersignin', { email, password });
       if (response.status === 200) {
-        localStorage.setItem('userEmail', email);
+        localStorage.setItem('sellerEmail', email); // Store seller email
         localStorage.setItem('sellerAuthenticated', 'true');
         setAuthenticated(true);
         navigate('/sellersignin/sellerpage');

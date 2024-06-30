@@ -30,7 +30,7 @@ const SellerSignup = () => {
       
       if (response.status === 201) {
         alert('Signup successful!');
-        navigate('/sellersignin'); // Redirect to signin page after successful signup
+        navigate('/sellersignup'); // Redirect to signin page after successful signup
       } else {
         alert('Signup failed. Please try again.');
       }
